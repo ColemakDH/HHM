@@ -1,7 +1,5 @@
 /* STYLE SHEET FOR INDEX.HTM */
 
-
-
 article {	
   padding: 10px;
 }
@@ -48,9 +46,10 @@ nav {
 }
 
 section {
-  background-image: url("../media/PEP.jpg"); 
+  background-image: url("../media/PEP.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
 .floatright {
@@ -68,6 +67,3 @@ section {
   text-decoration: none;
   box-shadow: 5px 5px 5px #888888;
 }
-
-
-
