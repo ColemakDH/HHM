@@ -8,5 +8,5 @@ Emailed Coordinators
 3. Joseph - Backend Manager
 Researching PHP
 4. Avery - Repo Manager
-Created Repo and Shared it
+Created Repo and Shared it &
 Minor Format Impovements
