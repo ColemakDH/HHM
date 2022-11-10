@@ -41,14 +41,14 @@
     position: relative;
     width: 60px;
     height: 60px;
-    background: url('Media/menu.png');
+    background: url('media/menu.png');
     background-repeat: no-repeat;
     background-size: 60px;
     background-position: center;
     cursor: pointer;
 }
 .toggle.active {
-    background: url('Media/close.png');
+    background: url('media/close.png');
     background-repeat: no-repeat;
     background-size:60px;
     background-position: center;
