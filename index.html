@@ -1,75 +1,78 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8"/>
-<meta name="Description" content="Sample Website for learning HTML5 and CSS3"/>
-<link rel="stylesheet"  type="text/css" href="css/uCorp.css"/>
-<title>Brown Box</title>
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/site.webmanifest">
-<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="favicon/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="favicon/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
-</head>
-<body>
-
-<header>
-<img src="media/BrownBox.png" alt="Brown Box Logo" width="100" height="100"/>
-
-</header>
-
-<nav>
-<p><a class="navlinks" href="https://careercenter.apsva.us/brown-box-lunch-order-form/">Order Forms</a></p>
-<p><a class="navlinks" href="https://careercenter.apsva.us/programs/pep/">PEP</a></p>
-</nav> 
-
-<section>
-
-<article>
-<h1>About Us</h1>
-<img class="floatright" src="media/brownboxstaff.jpg" height="114" alt="Speakers"/>
-Brown Box Lunch prepares made-to-order sandwiches, wraps, and salads on Tuesdays and Thursdays weekly. School staff can fill out an order form and custom design the lunch of their choice. Sandwiches and wraps are served with a chips and a cookie; salads come with a cookie only. Make sure to check out the weekly special, which rotates weekly.
-</article> 
-
-<article>
-<h1>Our Mission</h1>
-<video class="floatright" height="150" controls="controls">
-<source src="media/brownboxvid.mp4" type="video/mp4" />
-Your browser does not support the HTML5 video element.
-</video>
-PEP is a community based program for supported work experience, supported travel training, and independent living training. One of the many goals of PEP is to empower our young adults with self-advocacy through self-determination. Students learn independent living and work readiness skills within community settings, and all skills are tailored to meet individual student needs.  PEP partners with local businesses to help teach work and social skills within the business setting. These internships experiences provide an opportunity for students to demonstrate their talents. Two days a week, when students are at the Career Center for a full day, teachers engage students in direct instruction in the domains of personal finance, technology skills, resume writing, interview skills, guest speakers, and a variety of community outings. PEP students encourage to pursue enrichment experiences in a variety of ways, such as community/adult learning courses and/or Career and Technical Education (CTE) classes.
-</article>
-
-<article>
-<h1>How do I place my order?</h1>
-Order forms can be found in the main office by the mailboxes, or outside the Brown Box kitchen (near the cafeteria) on Tuesdays and Thursdays. Soon, customers will also be able to fill out a Google form online!
-<p>
-<audio controls="controls">
-<source src="media/BrownBoxAudio.mp3" type="audio/mpeg" />
-Your browser does not support the HTML5 audio element.
-</audio>
-</p>
-</article>
-
-</section> 
-
-<footer>
-<p>
-FOLLOW US ON:
-</p>
-<p>
-<a href="https://twitter.com/uCorp4">Twitter</a> |
-<a href="https://www.linkedin.com/company/ucorporation/">LinkedIn</a> |
-<a href="https://www.instagram.com/ucorp123/">Instagram</a>
-</p>
-<p>
-Copyright &copy; All rights reserved by Julian Molina
-</p>
-</footer>
-
-</body>
-</html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="css/index.css">
+      <link rel="icon" type="image/png" href="Media/menu.png">
+      <title>Brown Box Lunch</title>
+    </head>
+  
+  <body>
+  
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Ana's website</h2>
+        <div class="toggle"></div>
+      </header>
+      
+      <video src="Media/field.mp4" muted loop autoplay></video>
+  
+      <div class="overlay"></div>
+  
+      <div class="text">
+        <h2>Hello</h2> 
+        <h3>World</h3>
+        <p>This is the homepage</p>
+        <a href="Lab_2-1/Lab_2-1.htm">Rebrand</a>
+      </div>
+      
+      <ul class="social">
+        <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+        <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+        <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+      </ul>
+  
+    </section>
+  
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="AboutMe.html">About Me</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="contact.html">Contact</a></li>
+  
+        <li><a>_________</a></li>
+  
+        <li><a id="vLink1"><strong> HTML </strong> Valid! </a></li>
+        <li><a id="vLink2"><strong> CSS </strong> Valid! </a></li>
+  
+      </ul>
+    </div>
+  
+  
+    <script>
+       const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+  
+        menuToggle.addEventListener('click', () => {
+          menuToggle.classList.toggle('active');
+          showcase.classList.toggle('active');
+        })
+    </script>
+  
+  <script>
+    function init() {
+      var loc = window.location.href;
+      var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+      var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                          loc + '?profile=css3';
+      document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+      document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+    }
+    window.onload = init;
+  </script>
+  
+  
+  </body>
+  </html>
+  
