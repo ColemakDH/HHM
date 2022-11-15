@@ -41,14 +41,14 @@
     position: relative;
     width: 60px;
     height: 60px;
-    background: url('media/menu.png');
+    background: url('media/closedbox.png');
     background-repeat: no-repeat;
     background-size: 60px;
     background-position: center;
     cursor: pointer;
 }
 .toggle.active {
-    background: url('media/close.png');
+    background: url('media/openbox.png');
     background-repeat: no-repeat;
     background-size:60px;
     background-position: center;
