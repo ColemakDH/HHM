@@ -41,14 +41,14 @@
     position: relative;
     width: 60px;
     height: 60px;
-    background: url('media/closedbox.png');
+    background: url('https://cdn-icons-png.flaticon.com/128/697/697722.png');
     background-repeat: no-repeat;
     background-size: 60px;
     background-position: center;
     cursor: pointer;
 }
 .toggle.active {
-    background: url('media/openbox.png');
+    background: url('https://cdn-icons-png.flaticon.com/128/2366/2366259.png');
     background-repeat: no-repeat;
     background-size:60px;
     background-position: center;
